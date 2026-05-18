@@ -3,13 +3,13 @@ package org.example.productsbackend.domain.dto.response;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
 public class ApiErrorResponse {
-    private Object message;
+    private String message;
     private int status;
-    private LocalDate time;
+    private LocalDateTime time;
     private String uri;
 }

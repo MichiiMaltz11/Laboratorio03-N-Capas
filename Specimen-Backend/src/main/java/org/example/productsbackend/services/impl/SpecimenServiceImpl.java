@@ -8,7 +8,7 @@ import org.example.productsbackend.domain.dto.request.specimen.UpdateSpecimenReq
 import org.example.productsbackend.domain.dto.response.PageableResponse;
 import org.example.productsbackend.domain.dto.response.specimen.SpecimenResponse;
 import org.example.productsbackend.domain.entities.Specimen;
-import org.example.productsbackend.exceptions.ResourceNotFound;
+import org.example.productsbackend.exceptions.ResourceNotFoundException;
 import org.example.productsbackend.repositories.SpecimenRepository;
 import org.example.productsbackend.services.SpecimenService;
 import org.springframework.data.domain.Page;
@@ -44,7 +44,7 @@ public class SpecimenServiceImpl implements SpecimenService {
         Page<Specimen> specimenPage = specimenRepository.findAll(pageable);
 
         if (specimenPage.getTotalElements() == 0)
-            throw new ResourceNotFound("No specimens are registered in Hyrule");
+            throw new ResourceNotFoundException("No specimens are registered in Hyrule");
 
         List<SpecimenResponse> content = specimenMapper.toDtoList(specimenPage.getContent());
 
@@ -62,7 +62,7 @@ public class SpecimenServiceImpl implements SpecimenService {
     @Override
     public SpecimenResponse getSpecimenById(UUID id) {
         return specimenMapper.toDto(specimenRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFound("Specimen not found"))
+                .orElseThrow(() -> new ResourceNotFoundException("Specimen not found in Sheikah Slate records"))
         );
     }
 
@@ -80,4 +80,3 @@ public class SpecimenServiceImpl implements SpecimenService {
         return existSpecimen;
     }
 }
-
