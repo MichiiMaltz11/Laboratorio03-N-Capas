@@ -6,6 +6,8 @@ import org.example.productsbackend.domain.dto.response.specimen.SpecimenResponse
 import org.example.productsbackend.domain.entities.Specimen;
 import org.springframework.stereotype.Component;
 
+import org.springframework.data.domain.Page;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -42,6 +44,12 @@ public class SpecimenMapper {
 
     public List<SpecimenResponse> toDtoList(List<Specimen> specimens) {
         return specimens.stream()
+                .map(this::toDto)
+                .toList();
+    }
+
+    public List<SpecimenResponse> toDtoList(Page<Specimen> specimenPage) {
+        return specimenPage.stream()
                 .map(this::toDto)
                 .toList();
     }

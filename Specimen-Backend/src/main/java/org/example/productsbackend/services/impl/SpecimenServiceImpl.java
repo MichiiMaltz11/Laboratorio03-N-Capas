@@ -5,11 +5,16 @@ import lombok.RequiredArgsConstructor;
 import org.example.productsbackend.common.mappers.SpecimenMapper;
 import org.example.productsbackend.domain.dto.request.specimen.CreateSpecimenRequest;
 import org.example.productsbackend.domain.dto.request.specimen.UpdateSpecimenRequest;
+import org.example.productsbackend.domain.dto.response.PageableResponse;
 import org.example.productsbackend.domain.dto.response.specimen.SpecimenResponse;
 import org.example.productsbackend.domain.entities.Specimen;
 import org.example.productsbackend.exceptions.ResourceNotFound;
 import org.example.productsbackend.repositories.SpecimenRepository;
 import org.example.productsbackend.services.SpecimenService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,14 +38,25 @@ public class SpecimenServiceImpl implements SpecimenService {
     }
 
     @Override
-    public List<SpecimenResponse> getAllSpecimens() {
-        List<Specimen> specimens = specimenRepository.findAll();
-        if (specimens.isEmpty())
+    public PageableResponse<SpecimenResponse> getAllSpecimens(int page, int size, String sortBy, String sortOrder) {
+        Sort.Direction direction = "desc".equalsIgnoreCase(sortOrder) ? Sort.Direction.DESC : Sort.Direction.ASC;
+        Pageable pageable = PageRequest.of(page, size, Sort.by(direction, sortBy));
+        Page<Specimen> specimenPage = specimenRepository.findAll(pageable);
+
+        if (specimenPage.getTotalElements() == 0)
             throw new ResourceNotFound("No specimens are registered in Hyrule");
 
-        return specimens.stream()
-                .map(specimenMapper::toDto)
-                .collect(Collectors.toList());
+        List<SpecimenResponse> content = specimenMapper.toDtoList(specimenPage.getContent());
+
+        return PageableResponse.<SpecimenResponse>builder()
+                .content(content)
+                .page(specimenPage.getNumber())
+                .size(specimenPage.getSize())
+                .totalElements(specimenPage.getTotalElements())
+                .totalPages(specimenPage.getTotalPages())
+                .sortBy(sortBy)
+                .sortOrder(direction.name())
+                .build();
     }
 
     @Override
