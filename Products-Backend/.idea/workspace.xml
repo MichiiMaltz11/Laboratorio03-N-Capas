@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7edc72ee-0bea-44ca-bbaf-665ec57bcf99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/ProductsBackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/common/mappers/SpecimenMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/controllers/SpecimenController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/dto/request/specimen/CreateSpecimenRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/dto/request/specimen/UpdateSpecimenRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/dto/response/ApiErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/dto/response/GeneralResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/dto/response/specimen/SpecimenResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/domain/entities/Specimen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/exceptions/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/exceptions/ResourceNotFound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/repositories/SpecimenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/services/SpecimenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productsbackend/services/impl/SpecimenServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/productsbackend/ProductsBackendApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="8bf10148-25c0-49f2-8647-4aa3a674fd74" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="6cf98f65-cc05-4fbf-b393-7bd789765b84" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="status" value="Completed" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="154e2a4a-8258-4b66-b660-8761cd5b3d96" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="8bf10148-25c0-49f2-8647-4aa3a674fd74" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/michii-maltez/Desktop/Laboratorio03-N-Capas/Products-Backend" value="3DuhVWjGplwT5cxX4OUuv4EpuxO" />
+      <entry key="_/home/michii-maltez/Desktop/Products-Backend" value="3Dn6vJe9fsp5J63lFcN9BebjF6N" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="agent-panel" value="Auto" />
+      <entry key="chat-panel" value="Auto" />
+    </selectedModels>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000003539380002" />
+      <entry key="MS500" value="1.0512608069497955" />
+      <entry key="S2" value="1.475824017630947" />
+      <entry key="S5" value="1.742982430246294" />
+      <entry key="S10" value="1.8619642859813361" />
+      <entry key="S30" value="1.9522618934795197" />
+      <entry key="S60" value="2.0168874999923574" />
+      <entry key="M2" value="2.3728465572571245" />
+      <entry key="M5" value="3.5391623455811243" />
+      <entry key="M10" value="4.517147205949503" />
+      <entry key="M15" value="5.284094547971013" />
+      <entry key="M30" value="9.318350899538016" />
+      <entry key="H1" value="19.02818471445757" />
+      <entry key="H2" value="30.958089250436835" />
+      <entry key="H4" value="40.574864669285525" />
+      <entry key="D1" value="51.43751402031227" />
+      <entry key="W1" value="53.62503448178192" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.0423369489984644E-136" />
+      <entry key="S2" value="1.1959171697190872E-34" />
+      <entry key="S5" value="2.8145930303393386E-14" />
+      <entry key="S10" value="1.984959115405724E-7" />
+      <entry key="S30" value="0.009401930026596148" />
+      <entry key="S60" value="0.17440149748957046" />
+      <entry key="M2" value="0.9246337324935292" />
+      <entry key="M5" value="2.9444747582895405" />
+      <entry key="M10" value="4.530994968913374" />
+      <entry key="M15" value="5.573926635570689" />
+      <entry key="M30" value="10.547595141340135" />
+      <entry key="H1" value="23.5042871895454" />
+      <entry key="H2" value="40.49231328078069" />
+      <entry key="H4" value="54.68441770558353" />
+      <entry key="D1" value="71.08467251011086" />
+      <entry key="W1" value="74.42607347876901" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9592644405307795" />
+      <entry key="MS500" value="1.041992253922163" />
+      <entry key="S2" value="1.471443616019978" />
+      <entry key="S5" value="1.7407104085753884" />
+      <entry key="S10" value="1.8607126146668187" />
+      <entry key="S30" value="1.9608415916131376" />
+      <entry key="S60" value="2.1868951389994375" />
+      <entry key="M2" value="3.283978512059202" />
+      <entry key="M5" value="6.4638119433938925" />
+      <entry key="M10" value="9.032151174956438" />
+      <entry key="M15" value="10.84476969373009" />
+      <entry key="M30" value="19.85343268291475" />
+      <entry key="H1" value="42.51838796906154" />
+      <entry key="H2" value="71.43812123203215" />
+      <entry key="H4" value="95.2509273934034" />
+      <entry key="D1" value="122.5203643193868" />
+      <entry key="W1" value="128.05083508888612" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Dn6vJe9fsp5J63lFcN9BebjF6N" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.ProductsBackendApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/michii-maltez/Desktop/Laboratorio03-N-Capas/Specimen-Backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.productsbackend.domain.dto.response" />
+      <recent name="org.example.productsbackend.services" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProductsBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DB_PASSWORD" value="spike2003" />
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/SpecimenDatabase" />
+        <env name="DB_USER" value="postgres" />
+      </envs>
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Products-Backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.productsbackend.ProductsBackendApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7edc72ee-0bea-44ca-bbaf-665ec57bcf99" name="Changes" comment="" />
+      <created>1778905856738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778905856738</updated>
+      <workItem from="1778905858039" duration="16148000" />
+      <workItem from="1779118177953" duration="8785000" />
+      <workItem from="1779129484690" duration="1387000" />
+      <workItem from="1779137886615" duration="442000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
