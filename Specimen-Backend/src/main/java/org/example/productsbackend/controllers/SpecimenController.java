@@ -72,8 +72,8 @@ public class SpecimenController {
         );
     }
 
-    public ResponseEntity<GeneralResponse> buildResponse(String message, HttpStatus status, Object data) {
-        String uri = ServletUriComponentsBuilder.fromCurrentRequest().build().getPath();
+    private ResponseEntity<GeneralResponse> buildResponse(String message, HttpStatus status, Object data) {
+        String uri = ServletUriComponentsBuilder.fromCurrentRequest().build().toUriString();
         return ResponseEntity
                 .status(status)
                 .body(GeneralResponse.builder()
